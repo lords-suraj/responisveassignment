@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>question 6</title>
+</head>
+<style>
+    body {
+        
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;}
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        background-color: black;
+        color: white;
+    }
+    .section1 p{
+        margin-right: 50px;
+        padding: 10px;
+        
+        
+    }
+    .section2 {
+        padding:20px ;
+    }
+    h1{
+        font-size: 25px;
+    }
+    li{
+        list-style-type: none;
+        padding: 20px;
+     
+    }
+    ul li a {
+        color: #a7a7a7;
+        text-decoration: none;
+    }
+    .enter{
+      width: 300px;
+      height: 35px;
+      border-radius: 8px;
+      text-align: center;
+      
+    }
+    
+    button{
+        width: 300px;
+        height: 40px;
+        border-radius: 8px;
+        text-align: center;
+        font-weight: 400px;
+        background-color: rgb(50, 50, 214);
+      
+    }
+    button:hover{
+      background-color: blue;
+      cursor:progress;
+    }
+    
+    
+@media (max-width: 700px) {
+.container{
+  display: flex;
+  flex-direction: column;
+}
+h3{
+  font-size: 30px;
+  margin-left: 10px;
+}
+li{
+  margin-left: -40px;
+  font-size: 20px;
+}
+
+.enter{
+  width: 300px;
+  height: 35px;
+  border-radius: 8px;
+  text-align: center;
+  margin-left: 150px;
+}
+button{
+
+    width: 300px;
+    height: 40px;
+    border-radius: 8px;
+    text-align: center;
+    margin-left: 155px;
+    background-color: rgb(26, 26, 243);
+  
+}
+button:hover{
+  background-color: blue;
+  cursor:progress;
+}
+}
+   
+</style>
+<body>
+    <div class="container">
+        <div class="section1">
+            <h3>One Card</h3>
+            <p>India's best metal credit card. Built with full-stack tech. Backed by the principles of simplicity, transparency, and giving back control to the user.</p>
+        </div>
+        <div class="section2">
+            <h3>Navigation</h3>
+            <ul>
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">About Us</a>
+              </li>
+              <li>
+                <a href="#">Careers</a>
+              </li>
+              <li>
+                <a href="#">Offers</a>
+              </li>
+            </ul>
+          </div>
+       
+        <div class="section3">
+            <h3>Support</h3>
+          <ul>
+            <li>
+              <a href="#">F.A.Q</a>
+            </li>
+            <li>
+              <a href="#">Cookies Policy</a>
+            </li>
+            <li>
+              <a href="#">Terms Of Service</a>
+            </li>
+            <li>
+              <a href="#">Support</a>
+            </li>
+          </ul>
+        </div>
+     
+        <div class="section4">
+            <h3>Newsletter</h3>
+            <div>
+              <input class="enter" type="email" placeholder="Your email id here" />
+              <p>
+              <button>Subscribe</button>
+            </p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

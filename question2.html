@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 2</title>
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+  />
+</head>
+<style>
+    *{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+        color: #fff;
+      }
+      .container{
+        display: flex;
+        align-items:center;
+        justify-content: space-between;
+      
+        background-color: black;
+        min-width: 1200px;
+        width: 100vw;
+        margin-left: 0px;
+        margin-right: 0px;
+        display: none;
+
+      }
+      .container img{
+        width: 50px;
+        border-radius: 150px;
+        margin-left: 80px;
+      }
+      .nav a{
+padding: 15px;
+color: #fff;
+font-size: 15px;
+font-weight: bolder;
+      }
+      .nav a:hover{
+        color: aqua;
+        font-size: 16px;
+      }
+      button{
+        background-color: rgb(128, 128, 237);
+        color: white;
+        font-size: 15px;
+        font-weight: bolder;
+        padding: 10px;
+        width: 120px;
+        border: 1px solid rgb(126, 210, 246);
+        border-radius: 10px;
+      }
+      .btn{
+        margin-right: 80px;
+      }
+      button:hover{
+        background-color: blue;
+        scale: 1.1;
+        cursor: pointer;
+      }.nav2{
+        display: flex;
+        align-items:center;
+        justify-content: space-between;
+        background-color: black;
+        flex-wrap: wrap;
+      }
+      .nav2 img{
+        width: 30px;
+        border-radius: 150px;
+      }
+      @media screen and (min-width: 800px) {
+        .nav2{
+            display: none;
+        }
+        .container{
+            display: flex;
+        }
+        .main{
+          display: none;
+        }
+
+      }
+      
+      .main{
+        display: flex;
+        grid-template-columns: repeat(2,1fr);
+        
+      }
+      
+      .section1 img{
+        width: 355px;
+        text-align: center;
+       
+        margin-left: 150px;
+      }
+      .section2 video{
+        width: 100%;
+      
+      }
+      .section1{
+        grid-area: head;
+      }
+      .section2{
+        grid-area: foot;
+      }
+      
+   .section1 .maintxt{
+    font-size: 40px;
+    font-weight: 700px;
+    text-align: center;
+  
+    margin-top: 80px;
+    margin-left: -200px;
+   }
+   .section1 .high{
+    margin-left: -150px;
+    text-align: center;
+    font-size: 60px;
+    margin-top: -20px;
+    font-weight: bolder;
+    color: #1893F7;
+   }
+   .section1 .brand{
+     text-align: center;
+     margin-left: -115px;
+     margin-top: -40px;
+     font-size: 25px;
+     color: #1892F7;
+    }
+    .section1 .txt2{
+   
+     margin-left:146px ;
+     margin-right: 140px;
+     font-size: 20px;
+    }
+    .section1 .btn1{
+     background-color: rgb(46, 46, 231);
+     width: 120px;
+     height: 40px;
+     margin-left: 160px;
+    }
+    .btn1:hover{
+     background-color: blue;
+    }
+      @media screen and (max-width: 800px){
+.main{
+      display: flex;
+      flex-direction: column;
+}
+.section1{
+  text-align: left;
+  margin-left: -110px;
+}
+.section1 .txt2{
+  margin-right: 10px;
+  margin-left: 120px;
+}
+.section1 .imgg{
+  margin-left: 120px;
+}
+.section1 button{
+  display: none;
+  margin-top: 150px;
+}
+.section2 video{
+  height: 100%;
+  margin-top: 100px;
+}
+.section1 .maintxt{
+  margin-left: -230px;
+}
+      }
+   
+   </style>
+   <body>
+     <div class="container">
+         <div class="logo"><img src="logo.png"></div>
+         <div class="nav">
+   <a class="nav-item">home</a>
+   <a class="nav-item">Blog</a>
+   <a class="nav-item">About</a>
+             <a class="nav-item">Contact Us</a>
+         </div>
+         <button class="btn">Login</button>
+     </div>
+     <div class="nav2">
+         <div class="logo"><img src="logo.png"></div>
+         <div><span class="material-symbols-outlined"> menu </span></div>
+     </div>
+   
+     <div class="main">
+       <div class="section1">
+   <p class="maintxt">Say Hi to</p>
+   <p class="high">OneCard</p>
+   <p class="brand">Co-branded Card Issuers :</p>
+   <img class="imgg" src="bank.png"/>
+   <p class="txt2">India's best metal credit card. Built with full-stack tech. Backed by the principles of simplicity, transparency, and giving back control to the user.
+   
+   </p>
+   <button class="btn1 ">
+   Submit
+   </button>
+   
+       </div>
+   
+       <div class="section2">
+   <video autoplay muted loop>
+   <source src="onecard.mp4" type="video/mp4">
+   </video>
+       </div>
+       
+     </div>
+  
+  </body>
+</html>
